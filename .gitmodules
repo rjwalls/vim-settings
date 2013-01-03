@@ -43,3 +43,15 @@
 [submodule "bundle/snipmate2"]
 	path = bundle/snipmate2
 	url = git@github.com:garbas/vim-snipmate.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = git@github.com:honza/snipmate-snippets.git
+[submodule "bundle/tlibvim"]
+	path = bundle/tlibvim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "vim-addon-mw-utils"]
+	path = vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
