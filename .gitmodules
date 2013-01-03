@@ -28,6 +28,15 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
+[submodule "bundle/supertab0"]
+	path = bundle/supertab0
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/snipmate0"]
+	path = bundle/snipmate0
+	url = git://github.com/garbas/vim-snipmate.git
+[submodule "bundle/snipmate-snippets0"]
+	path = bundle/snipmate-snippets0
+	url = git://github.com/honza/snipmate-snippets.git
+[submodule "bundle/rope-vim"]
+	path = bundle/rope-vim
+	url = https://github.com/sontek/rope-vim.git
