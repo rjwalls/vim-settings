@@ -24,10 +24,19 @@
 	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
+	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/pep8"]
 	path = bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/supertab1"]
+	path = bundle/supertab1
+	url = git@github.com:ervandew/supertab.git
+[submodule "bundles/snipmate1"]
+	path = bundles/snipmate1
+	url = git@github.com:msanders/snipmate.vim.git
+[submodule "bundle/snipmate1"]
+	path = bundle/snipmate1
+	url = git@github.com:msanders/snipmate.vim.git
