@@ -13,33 +13,18 @@
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = git://github.com/godlygeek/csapprox.git
-[submodule "ropevim"]
-	path = ropevim
-	url = https://github.com/peplin/ropevim.git
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
 	url = https://github.com/peplin/ropevim.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git@github.com:garbas/vim-snipmate.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/pep8"]
 	path = bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate-snippets
-	url = git@github.com:honza/snipmate-snippets.git
 [submodule "bundle/tlibvim"]
 	path = bundle/tlibvim
 	url = https://github.com/tomtom/tlib_vim.git
-[submodule "vim-addon-mw-utils"]
-	path = vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
