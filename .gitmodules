@@ -21,7 +21,7 @@
 	url = https://github.com/peplin/ropevim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://github.com/davidhalter/vim-snipmate.git
+	url = git@github.com:garbas/vim-snipmate.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
@@ -31,18 +31,6 @@
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule "bundle/supertab1"]
-	path = bundle/supertab1
-	url = git@github.com:ervandew/supertab.git
-[submodule "bundles/snipmate1"]
-	path = bundles/snipmate1
-	url = git@github.com:msanders/snipmate.vim.git
-[submodule "bundle/snipmate1"]
-	path = bundle/snipmate1
-	url = git@github.com:garbas/vim-snipmate.git
-[submodule "bundle/snipmate2"]
-	path = bundle/snipmate2
-	url = git@github.com:garbas/vim-snipmate.git
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git@github.com:honza/snipmate-snippets.git
@@ -55,6 +43,3 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/snipmate3"]
-	path = bundle/snipmate3
-	url = https://github.com/davidhalter/vim-snipmate.git
