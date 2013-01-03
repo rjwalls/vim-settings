@@ -21,7 +21,7 @@
 	url = https://github.com/peplin/ropevim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git@github.com:garbas/vim-snipmate.git
+	url = https://github.com/davidhalter/vim-snipmate.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
@@ -55,3 +55,6 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/snipmate3"]
+	path = bundle/snipmate3
+	url = https://github.com/davidhalter/vim-snipmate.git
