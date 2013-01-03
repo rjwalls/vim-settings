@@ -13,3 +13,9 @@
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = git://github.com/godlygeek/csapprox.git
+[submodule "ropevim"]
+	path = ropevim
+	url = https://github.com/peplin/ropevim.git
+[submodule "bundle/ropevim"]
+	path = bundle/ropevim
+	url = https://github.com/peplin/ropevim.git
