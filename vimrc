@@ -1,5 +1,6 @@
+" Use the following to disable certain plugins
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'snipmate0')
+" call add(g:pathogen_disabled, 'snipmate0')
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -12,12 +13,25 @@ set shiftwidth=4
 set expandtab
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\]\ (%p%%)
 
+colorscheme solarized
 
 filetype on
 filetype plugin on
 filetype plugin indent on
+
+" Python options
 au FileType py set autoindent
 au FileType py set smartindent
+
+" TeX Options
+au FileType tex set textwidth=80 "Set vi to hard wrap text
+au FileType tex set spell "Turn on spell checking
+
+" Change the paragraph formatter to par with an 80 column line width
+" This option is currently disabled because I keep getting seq faults when I
+" use gqip
+"set formatprg=par\ -w80
+
 
 "This allows us to collapse methods.
 set foldmethod=indent
@@ -33,7 +47,6 @@ map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 
 
-
 " Configure Syntastic
 map <leader>e :Errors<CR>
 " Force Syntastic to use pyflakes
@@ -43,13 +56,6 @@ set statusline+=%{SyntasticStatuslineFlag()}
 " Check for errors when a file is opened (as well as saved)
 let g:syntastic_check_on_open=1
 
-
-" Configure Solarized
-"let g:solarized_termtrans=1
-"let g:solarized_termcolors=256
-"let g:solarized_contrast="high"
-"let g:solarized_visibility="high"
-colorscheme solarized
 
 let g:pep8_map='<leader>8'
 
