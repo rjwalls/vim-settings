@@ -1,5 +1,6 @@
 " Use the following to disable certain plugins
 let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'ropevim')
 " call add(g:pathogen_disabled, 'snipmate0')
 
 call pathogen#runtime_append_all_bundles()
@@ -59,5 +60,7 @@ let g:syntastic_check_on_open=1
 
 let g:pep8_map='<leader>8'
 
-let g:ropevim_vim_completion=1
-let g:ropevim_extended_complete=1
+"Setting these options is supposed to give nice rope code assist,
+"but I have yet to get it to work.
+"let g:ropevim_vim_completion=1
+"let g:ropevim_extended_complete=1
