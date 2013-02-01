@@ -38,6 +38,12 @@ au FileType py set smartindent
 au FileType tex set textwidth=80 "Set vi to hard wrap text
 au FileType tex set spell "Turn on spell checking
 
+" Markdown Options
+au FileType md set textwidth=80 "Set vi to hard wrap text
+au FileType md set spell "Turn on spell checking
+
+
+
 " Change the paragraph formatter to par with an 80 column line width
 " This option is currently disabled because I keep getting seq faults when I
 " use gqip
