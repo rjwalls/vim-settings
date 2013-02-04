@@ -35,12 +35,12 @@ au FileType py set autoindent
 au FileType py set smartindent
 
 " TeX Options
-au FileType tex set textwidth=80 "Set vi to hard wrap text
-au FileType tex set spell "Turn on spell checking
+au FileType plaintex set textwidth=80 "Set vi to hard wrap text
+au FileType plaintex set spell "Turn on spell checking
 
 " Markdown Options
-au FileType md set textwidth=80 "Set vi to hard wrap text
-au FileType md set spell "Turn on spell checking
+au FileType markdown set textwidth=80 "Set vi to hard wrap text
+au FileType markdown set spell "Turn on spell checking
 
 
 
