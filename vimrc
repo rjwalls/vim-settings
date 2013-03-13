@@ -42,7 +42,8 @@ au FileType plaintex set spell "Turn on spell checking
 au FileType markdown set textwidth=80 "Set vi to hard wrap text
 au FileType markdown set spell "Turn on spell checking
 
-
+" Makefile Options
+au FileType make set noexpandtab
 
 " Change the paragraph formatter to par with an 80 column line width
 " This option is currently disabled because I keep getting seq faults when I
