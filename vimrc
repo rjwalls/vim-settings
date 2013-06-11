@@ -37,6 +37,8 @@ au FileType py set smartindent
 " TeX Options
 au FileType plaintex set textwidth=80 "Set vi to hard wrap text
 au FileType plaintex set spell "Turn on spell checking
+au FileType tex set textwidth=80 "Set vi to hard wrap text
+au FileType tex set spell "Turn on spell checking
 
 " Markdown Options
 au FileType markdown set textwidth=80 "Set vi to hard wrap text
