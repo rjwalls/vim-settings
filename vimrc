@@ -5,7 +5,7 @@
 
 " Automatically reload vimrc if changed
 " Doesn't seem to be working...
-autocmd! bufwritepost .vimrc source %
+" autocmd! bufwritepost .vimrc source %
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
@@ -36,8 +36,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-" Replaced by powerline
-" set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\]\ (%p%%)
+" May Replace with powerline
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\]\ (%p%%)
 
 " Temporarily disabled until I get python-mode working
 " This will make windows resize when another window is opened or closed
@@ -79,6 +79,7 @@ au FileType tex set textwidth=80 "Set vi to hard wrap text
 au FileType tex set spell "Turn on spell checking
 
 " Markdown Options
+au BufNewFile,BufRead *.md set filetype=markdown
 au FileType markdown set textwidth=80 "Set vi to hard wrap text
 au FileType markdown set spell "Turn on spell checking
 
@@ -124,7 +125,7 @@ inoremap <silent>k <C-R>=OmniPopup('k')<CR>
 " ==================================================
 
 " Powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Use the following to disable certain plugins
 let g:pathogen_disabled = []
