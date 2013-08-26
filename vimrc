@@ -73,14 +73,14 @@ au FileType py set autoindent
 au FileType py set smartindent
 
 " TeX Options
-au FileType plaintex set textwidth=80 "Set vi to hard wrap text
+au FileType plaintex set textwidth=79 "Set vi to hard wrap text
 au FileType plaintex set spell "Turn on spell checking
-au FileType tex set textwidth=80 "Set vi to hard wrap text
+au FileType tex set textwidth=79 "Set vi to hard wrap text
 au FileType tex set spell "Turn on spell checking
 
 " Markdown Options
 au BufNewFile,BufRead *.md set filetype=markdown
-au FileType markdown set textwidth=80 "Set vi to hard wrap text
+au FileType markdown set textwidth=79 "Set vi to hard wrap text
 au FileType markdown set spell "Turn on spell checking
 
 " Makefile Options
@@ -134,7 +134,7 @@ call add(g:pathogen_disabled, 'ropevim')
 call add(g:pathogen_disabled, 'rope-vim')
 call add(g:pathogen_disabled, 'pep8')
 call add(g:pathogen_disabled, 'pydoc')
-call add(g:pathogen_disabled, 'python-mode')
+" call add(g:pathogen_disabled, 'python-mode')
 call add(g:pathogen_disabled, 'powerline')
 " Disable the old version of minibufexplorer as I want
 " to try a new and improved version. from github.com/fholgado
