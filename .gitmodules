@@ -31,12 +31,6 @@
 [submodule "bundle/snipmate0"]
 	path = bundle/snipmate0
 	url = git://github.com/garbas/vim-snipmate.git
-[submodule "bundle/snipmate-snippets0"]
-	path = bundle/snipmate-snippets0
-	url = git://github.com/honza/snipmate-snippets.git
-[submodule "bundle/rope-vim"]
-	path = bundle/rope-vim
-	url = https://github.com/sontek/rope-vim.git
 [submodule "bundle/tasklist"]
 	path = bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
@@ -49,9 +43,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule "bundle/ropevim"]
-	path = bundle/ropevim
-	url = git://github.com/peplin/ropevim.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
