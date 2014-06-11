@@ -40,9 +40,6 @@
 [submodule "bundle/tasklist"]
 	path = bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
-[submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = https://github.com/sontek/minibufexpl.vim.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
@@ -64,3 +61,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = git@github.com:fholgado/minibufexpl.vim.git
