@@ -1,6 +1,14 @@
 vim-settings
 ============
 
+Update submodules:
+```
+git submodule foreach git pull origin master
+```
+See more info
+[here](http://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin).
+
+
 Uninstall bundles:
 ```bash
 git submodule deinit bundle/vim-rvm
