@@ -55,3 +55,6 @@
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = git@github.com:fholgado/minibufexpl.vim.git
+[submodule "bundle/textlint"]
+	path = bundle/textlint
+	url = git@github.com:DamienCassou/textlint.git
