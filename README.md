@@ -24,7 +24,7 @@ git submodule foreach git pull origin master
 ```
 - Set up vimrc 
 ```bash
-ln -s ~/.vim/.vimrc ~/.vimrc 
+ln -s ~/.vim/vimrc ~/.vimrc 
 ```
 
 - Change origin if you have a remote repo 
