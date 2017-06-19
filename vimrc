@@ -25,8 +25,8 @@ vnoremap > >gv  " better indentation
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
-set pastetoggle=<F2>
-set clipboard=unnamed
+" set pastetoggle=<F2>
+" set clipboard=unnamed
 
 " Show whitespace
 " MUST be inserted BEFORE the colorscheme command
@@ -48,11 +48,6 @@ set expandtab
 
 " May Replace with powerline
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\]\ (%p%%)
-
-" Temporarily disabled until I get python-mode working
-" This will make windows resize when another window is opened or closed
-" Works great with minibufexplorer
-" set equalalways
 
 " Make backspace work properly
 set backspace=indent,eol,start
@@ -89,18 +84,12 @@ au FileType tex set textwidth=79 "Set vi to hard wrap text
 au FileType tex set spell "Turn on spell checking
 
 " Markdown Options
-au BufNewFile,BufRead *.md set filetype=markdown
+"au BufNewFile,BufRead *.md set filetype=markdown
 au FileType markdown set textwidth=79 "Set vi to hard wrap text
-au FileType markdown set spell "Turn on spell checking
+"au FileType markdown set spell "Turn on spell checking
 
 " Makefile Options
 au FileType make set noexpandtab
-
-" Change the paragraph formatter to par with an 80 column line width
-" This option is currently disabled because I keep getting seq faults when I
-" use gqip
-" set formatprg=par\ -w80
-
 
 "This allows us to collapse methods.
 set foldmethod=indent
@@ -126,56 +115,6 @@ endfunction
 inoremap <silent>j <C-R>=OmniPopup('j')<CR>
 inoremap <silent>k <C-R>=OmniPopup('k')<CR>
 
-" Python code completion
-" This line no longer needed due to python-mode
-" au FileType py set omnifunc=pythoncomplete#Complete
-
-" ==================================================
-" Plugin Config!
-" ==================================================
-
-" Powerline
-"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
-" Use the following to disable certain plugins
-let g:pathogen_disabled = []
-" These are disable because python-mode supersedes them
-call add(g:pathogen_disabled, 'ropevim')
-call add(g:pathogen_disabled, 'rope-vim')
-call add(g:pathogen_disabled, 'pep8')
-call add(g:pathogen_disabled, 'pydoc')
-" call add(g:pathogen_disabled, 'python-mode')
-call add(g:pathogen_disabled, 'powerline')
-" Disable the old version of minibufexplorer as I want
-" to try a new and improved version. from github.com/fholgado
-call add(g:pathogen_disabled, 'minibufexpl')
-
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
-
-
-" Make the editor pretty
-" colorscheme solarized
-
-" python-mode
-" I like jedi-vim, so we need to disable the duplicate features
-let g:pymode_doc = 0
-let g:pymode_run = 1
-let g:pymode_lint = 1
-let g:pymode_rope = 0
-let g:pymode_folding = 1
-let g:pymode_motion = 0
-let g:pymode_breakpoint = 0
-let g:pymode_syntax_all = 0
-
-" Autoremove unused whitespaces
-let g:pymode_utils_whitespaces = 1
-
-" Enable pymode indentation
-let g:pymode_indent = 1
-
-" Snipmate 
-let g:snips_author = "rjwalls"
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
@@ -190,9 +129,6 @@ map <leader>tg :TlistToggle<CR>
 
 " Configure Syntastic
 map <leader>e :Errors<CR>
-
-" Force Syntastic to use pyflakes
-let g:syntastic_python_checkers = ['pyflakes']
 
 set statusline+=%{SyntasticStatuslineFlag()}
 " Check for errors when a file is opened (as well as saved)
