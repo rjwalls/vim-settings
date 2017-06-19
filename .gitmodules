@@ -31,9 +31,6 @@
 [submodule "bundle/minibufexpl-fho"]
 	path = bundle/minibufexpl-fho
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = git@github.com:fholgado/minibufexpl.vim.git
