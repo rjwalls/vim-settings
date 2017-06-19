@@ -150,8 +150,8 @@ call add(g:pathogen_disabled, 'powerline')
 " to try a new and improved version. from github.com/fholgado
 call add(g:pathogen_disabled, 'minibufexpl')
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 
 
 " Make the editor pretty
@@ -180,10 +180,6 @@ let g:snips_author = "rjwalls"
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 
-" Remapping Rope commands
-" map <leader>j :RopeGotoDefinition<CR>
-" map <leader>r :RopeRename<CR>
-
 " Remap Tasklist
 map <leader>td <Plug>TaskList
 "Add a new token that can be recognized by the Tasklist plugin
@@ -197,19 +193,9 @@ map <leader>e :Errors<CR>
 
 " Force Syntastic to use pyflakes
 let g:syntastic_python_checkers = ['pyflakes']
-" Add a flag to the status line. (Not sure if this works)
 
 set statusline+=%{SyntasticStatuslineFlag()}
 " Check for errors when a file is opened (as well as saved)
 let g:syntastic_check_on_open=1
 
-" pep8 -- disabled due to python-mode
-" let g:pep8_map='<leader>8'
-
-"Setting these options is supposed to give nice rope code assist,
-" disabled because of python-mode
-" let g:ropevim_vim_completion=1
-" let g:ropevim_extended_complete=1
-" let g:ropevim_autoimport_modules = ["os"]
-"
-
+execute pathogen#infect()
