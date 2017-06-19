@@ -1,11 +1,20 @@
 " I pulled many of these settings from places around the web including:
 " https://github.com/mbrochh/vim-as-a-python-ide/
 " http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
-
+" https://danielmiessler.com/study/vim/#gs.JUquA0M
 
 " Automatically reload vimrc if changed
 " Doesn't seem to be working...
 " autocmd! bufwritepost .vimrc source %
+
+" Who needs escape anyway?
+inoremap jj <ESC>
+inoremap jk <ESC>
+
+noremap ; :
+nnoremap : ;
+
+let mapleader = "\<Space>"
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
@@ -21,8 +30,9 @@ set clipboard=unnamed
 
 " Show whitespace
 " MUST be inserted BEFORE the colorscheme command
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-au InsertLeave * match ExtraWhitespace /\s\+$/
+"
+" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Shows a vertical line in the 80 column
 set colorcolumn=80
@@ -145,7 +155,7 @@ call pathogen#helptags()
 
 
 " Make the editor pretty
-colorscheme solarized
+" colorscheme solarized
 
 " python-mode
 " I like jedi-vim, so we need to disable the duplicate features
