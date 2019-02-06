@@ -31,6 +31,8 @@ Set up vimrc
 ln -s ~/.vim/vimrc ~/.vimrc 
 ```
 
+Note: on Debian you might need to run `apt-get install vim-gui-common` to fix errors related to unsupported commands.
+
 ### Uninstall bundles
 
 ```bash
